@@ -11,7 +11,9 @@ pacman-key --refresh-keys
 pacman -Syy
 
 #install some packages with need for UserLAnd
-pacman -S sudo dropbear x11vnc xterm lxde xorg-server-xvfb xorg-xsetroot expect gzip --noconfirm
+pacman -S sudo dropbear x11vnc xterm xorg-server-xvfb xorg-xsetroot expect gzip --noconfirm
+pacman -S sudo lxde dbus
+pacman -S sudo pulseaudio
 
 #clean up after ourselves
 yes | pacman -Scc
