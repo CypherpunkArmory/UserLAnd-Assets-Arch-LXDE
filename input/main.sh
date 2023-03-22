@@ -12,8 +12,8 @@ pacman -Syy
 
 #install some packages with need for UserLAnd
 pacman -S sudo dropbear x11vnc xterm xorg-server-xvfb xorg-xsetroot expect gzip --noconfirm
-pacman -S sudo lxde dbus
-pacman -S sudo pulseaudio
+pacman -S sudo lxde dbus --noconfirm
+pacman -S sudo pulseaudio --noconfirm
 
 #clean up after ourselves
 yes | pacman -Scc
